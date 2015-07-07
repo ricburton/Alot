@@ -1,0 +1,6 @@
+//Disable Fill (control option f)
+var selection = context.selection
+for (var i = 0; i < [selection count]; i++) {
+  var layer = [[selection objectAtIndex:i] style]
+  [[layer fill] setIsEnabled:0]
+}

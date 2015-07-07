@@ -1,0 +1,6 @@
+//Disable Border (control option b)
+var selection = context.selection
+for (var i = 0; i < [selection count]; i++) {
+  var layer = [[selection objectAtIndex:i] style]
+  [[layer border] setIsEnabled:0]
+}

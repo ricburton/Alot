@@ -1,0 +1,6 @@
+//Disable Shadow (control option s)
+var selection = context.selection
+for (var i = 0; i < [selection count]; i++) {
+  var layer = [[selection objectAtIndex:i] style]
+  [[layer shadow] setIsEnabled:0]
+}
